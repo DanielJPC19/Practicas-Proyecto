@@ -1,5 +1,6 @@
 # Practicas-Proyecto
-Practicas con herramientas de Git
+
+Practicas con herramientas de Git, haciendo uso de Gitflow y GitHub.
 
 ## Integrantes
 
@@ -12,7 +13,9 @@ Practicas con herramientas de Git
 
 ## Descripción
 
-El software se encargará de la gestión de vehículos.
+El sistema desarrollado es un Sistema de Gestión de Vehículos que tiene como objetivo gestionar de manera eficiente la información técnica de una flota de vehículos, así como el historial de mantenimiento. El proyecto está diseñado para permitir a los usuarios administrar vehículos y sus datos, realizar búsquedas, y obtener reportes detallados de los atributos de cada vehículo.
+
+El sistema se basa en la creación de clases que representan los diferentes componentes clave del sistema de gestión, como los vehículos y su historial de mantenimiento. Cada clase tiene atributos específicos que ayudan a organizar la información de manera estructurada, lo que permite su fácil manipulación y búsqueda.
 
 
 ## Gestión de Vehículos
