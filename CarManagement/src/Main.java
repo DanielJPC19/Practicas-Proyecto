@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Main {
@@ -34,6 +35,5 @@ public class Main {
             System.out.println(v.marca + " " + v.modelo);
         }
 
-        //a
-    }
+
 }
