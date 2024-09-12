@@ -141,4 +141,12 @@ public class Vehiculo {
     public void setPotencia(int potencia) {
         this.potencia = potencia;
     }
+
+    @Override
+    public String toString() {
+        return "Marca: " + marca + ", Modelo: " + modelo + ", Año: " + ano +
+               ", Kilometraje: " + kilometraje + ", Estado Actual: " + estadoActual +
+               ", Tipo de Combustible: " + tipoGasolina + ", Color: " + color + 
+               ", Potencia (HP): " + potencia;
+    }
 }
