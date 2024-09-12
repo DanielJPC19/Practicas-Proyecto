@@ -10,12 +10,20 @@ public class Main {
         vehiculos.add(vehiculo);
     }
 
-    // Método para buscar vehículos por año
-    public ArrayList<Vehiculo> buscarVehiculoPorAno(String ano1, String ano2) {
+    // Método para buscar vehículos por año y comparar
+    public ArrayList<Vehiculo> buscarVehiculoPorAno(String ano, boolean mayor) {
         ArrayList<Vehiculo> resultados = new ArrayList<>();
+        int anoFiltro = Integer.parseInt(ano);
+
         for (Vehiculo v : vehiculos) {
-            if (v.getAno().compareTo(ano1) >= 0 && v.getAno().compareTo(ano2) <= 0) {
+            int anoVehiculo = Integer.parseInt(v.getAno());
+
+            if (mayor && anoVehiculo>anoFiltro) {
                 resultados.add(v);
+                
+            } else if (!mayor && anoVehiculo < anoFiltro) {
+                resultados.add(v);
+                
             }
         }
         return resultados;
@@ -34,11 +42,19 @@ public class Main {
         gestionVehiculos.agregarVehiculo(new Vehiculo("Toyota", "Corolla", "2015", 50000, "Bueno", "Gasolina"));
         gestionVehiculos.agregarVehiculo(new Vehiculo("Chevrolet", "Spark", "2016", 20000, "Excelente", "Gasolina"));
         gestionVehiculos.agregarVehiculo(new Vehiculo("Ford", "Focus", "2018", 30000, "Excelente", "Diesel"));
+        gestionVehiculos.agregarVehiculo(new Vehiculo("Honda", "Civic", "2012", 60000, "Regular", "Gasolina"));
 
-        // Buscar vehículos por año
-        ArrayList<Vehiculo> vehiculos2015 = gestionVehiculos.buscarVehiculoPorAno("2015", "2020");
-        System.out.println("Vehículos entre el 2015 y 2020:");
-        for (Vehiculo v : vehiculos2015) {
+        // Buscar vehículos por año mayor a 2015
+        ArrayList<Vehiculo> vehiculosMayores2015 = gestionVehiculos.buscarVehiculoPorAno("2015", true);
+        System.out.println("Vehículos con año mayor a 2015:");
+        for (Vehiculo v : vehiculosMayores2015) {
+            System.out.println(v.getMarca() + " " + v.getModelo());
+        }
+
+        // Buscar vehículos por año menor a 2015
+        ArrayList<Vehiculo> vehiculosMenores2015 = gestionVehiculos.buscarVehiculoPorAno("2015", false);
+        System.out.println("Vehículos con año menor a 2015:");
+        for (Vehiculo v : vehiculosMenores2015) {
             System.out.println(v.getMarca() + " " + v.getModelo());
         }
 
