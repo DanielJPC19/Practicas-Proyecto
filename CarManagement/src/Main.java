@@ -40,6 +40,7 @@ public class Main {
 
         // Agregar vehículos
         gestionVehiculos.agregarVehiculo(new Vehiculo("Toyota", "Corolla", "2015", 50000, "Bueno", "Gasolina"));
+        gestionVehiculos.agregarVehiculo(new Vehiculo("Chevrolet", "Spark", "2016", 20000, "Excelente", "Gasolina"));
         gestionVehiculos.agregarVehiculo(new Vehiculo("Ford", "Focus", "2018", 30000, "Excelente", "Diesel"));
         gestionVehiculos.agregarVehiculo(new Vehiculo("Honda", "Civic", "2012", 60000, "Regular", "Gasolina"));
 
