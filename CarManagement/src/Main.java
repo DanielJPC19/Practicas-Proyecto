@@ -11,10 +11,10 @@ public class Main {
     }
 
     // Método para buscar vehículos por año
-    public ArrayList<Vehiculo> buscarVehiculoPorAno(int ano) {
+    public ArrayList<Vehiculo> buscarVehiculoPorAno(String ano) {
         ArrayList<Vehiculo> resultados = new ArrayList<>();
         for (Vehiculo v : vehiculos) {
-            if (v.getAno() == ano) {
+            if (v.getAno().equals(ano)) {
                 resultados.add(v);
             }
         }
@@ -35,11 +35,11 @@ public class Main {
         gestionVehiculos.agregarVehiculo(new Vehiculo("Ford", "Focus", "2018", 30000, "Excelente", "Diesel"));
 
         // Buscar vehículos por año
-        ArrayList<Vehiculo> vehiculos2015 = gestionVehiculos.buscarVehiculoPorAno(2015);
+        ArrayList<Vehiculo> vehiculos2015 = gestionVehiculos.buscarVehiculoPorAno("2015");
         System.out.println("Vehículos del año 2015:");
         for (Vehiculo v : vehiculos2015) {
             System.out.println(v.getMarca() + " " + v.getModelo());
         }
 
-
+    }
 }

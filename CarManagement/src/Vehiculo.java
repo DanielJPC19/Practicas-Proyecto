@@ -19,7 +19,7 @@ public class Vehiculo {
     /*
      * Constructor method of the Vehicle class.
      */
-    public Vehiculo(String marca, String modelo, String año, int kilometraje, String estadoActual, String tipoGasolina) {
+    public Vehiculo(String marca, String modelo, String ano, int kilometraje, String estadoActual, String tipoGasolina) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
