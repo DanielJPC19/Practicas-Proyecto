@@ -25,7 +25,7 @@ public class Vehiculo {
         this.ano = ano;
         this.kilometraje = kilometraje;
         this.estadoActual = estadoActual;
-        this.tipoGasolina = tipoGasolina;
+        setTipoCombustible(tipoGasolina);
     }
 
     /*
@@ -110,5 +110,13 @@ public class Vehiculo {
      */
     public void setTipoGasolina(String fuelType) {
         this.tipoGasolina = fuelType;
+    }
+
+    public void setTipoCombustible(String tipoCombustible) {
+        if (tipoCombustible.equals("Gasolina") || tipoCombustible.equals("Diesel") || tipoCombustible.equals("Eléctrico")) {
+            this.fuelType = tipoCombustible;
+        } else {
+            System.out.println("Tipo de combustible no válido.");
+        }
     }
 }
