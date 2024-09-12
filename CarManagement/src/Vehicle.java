@@ -25,7 +25,7 @@ public class Vehicle {
         this.date = date;
         this.mileage = mileage;
         this.currentState = currentState;
-        this.fuelType = fuelType;
+        setTipoCombustible(fuelType);
     }
 
     /*
@@ -108,7 +108,14 @@ public class Vehicle {
     /*
      * Method that sets the fuel type of the vehicle.
      */
-    public void setFuelType(String fuelType) {
-        this.fuelType = fuelType;
+
+     public void setTipoCombustible(String tipoCombustible) {
+        if (tipoCombustible.equals("Gasolina") || tipoCombustible.equals("Diesel") || tipoCombustible.equals("Eléctrico")) {
+            this.fuelType = tipoCombustible;
+        } else {
+            System.out.println("Tipo de combustible no válido.");
+        }
     }
+
+
 }
