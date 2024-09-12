@@ -15,17 +15,19 @@ public class Vehiculo {
     String estadoActual;
     //Fuel type of the vehicle
     String tipoGasolina;
+    int potencia;
 
     /*
      * Constructor method of the Vehicle class.
      */
-    public Vehiculo(String marca, String modelo, String ano, int kilometraje, String estadoActual, String tipoGasolina) {
+    public Vehiculo(String marca, String modelo, String ano, int kilometraje, String estadoActual, String tipoGasolina, int potencia) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.kilometraje = kilometraje;
         this.estadoActual = estadoActual;
         setTipoCombustible(tipoGasolina);
+        this.potencia = potencia;
     }
 
     /*
@@ -118,5 +120,12 @@ public class Vehiculo {
         } else {
             System.out.println("Tipo de combustible no válido.");
         }
+    }
+    public int getPotencia() {
+        return potencia;
+    }
+
+    public void setPotencia(int potencia) {
+        this.potencia = potencia;
     }
 }
