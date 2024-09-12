@@ -15,17 +15,20 @@ public class Vehiculo {
     String estadoActual;
     //Fuel type of the vehicle
     String tipoGasolina;
+    //color of the vehicle
+    String color;
 
     /*
      * Constructor method of the Vehicle class.
      */
-    public Vehiculo(String marca, String modelo, String ano, int kilometraje, String estadoActual, String tipoGasolina) {
+    public Vehiculo(String marca, String modelo, String ano, int kilometraje, String estadoActual, String tipoGasolina, String color) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.kilometraje = kilometraje;
         this.estadoActual = estadoActual;
         this.tipoGasolina = tipoGasolina;
+        this.color = color;
     }
 
     /*
@@ -70,6 +73,10 @@ public class Vehiculo {
         return tipoGasolina;
     }
 
+    public String getColor(){
+        return color;
+    }
+
     /*
      * Method that sets the brand of the vehicle.
      */
@@ -110,5 +117,9 @@ public class Vehiculo {
      */
     public void setTipoGasolina(String fuelType) {
         this.tipoGasolina = fuelType;
+    }
+
+    public void setColor(String color){
+        this.color = color;
     }
 }
