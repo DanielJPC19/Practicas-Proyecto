@@ -66,6 +66,5 @@ public class Main {
 
         System.out.println();
         gestionVehiculos.imprimirVehiculos();
-
     }
 }
