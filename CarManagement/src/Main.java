@@ -31,9 +31,9 @@ public class Main {
         Main gestionVehiculos = new Main();
 
         // Agregar vehículos
-        gestionVehiculos.agregarVehiculo(new Vehiculo("Toyota", "Corolla", "2015", 50000, "Bueno", "Gasolina"));
-        gestionVehiculos.agregarVehiculo(new Vehiculo("Chevrolet", "Spark", "2016", 20000, "Excelente", "Gasolina"));
-        gestionVehiculos.agregarVehiculo(new Vehiculo("Ford", "Focus", "2018", 30000, "Excelente", "Diesel"));
+        gestionVehiculos.agregarVehiculo(new Vehiculo("Toyota", "Corolla", "2015", 50000, "Bueno", "Gasolina",1600,"Amarillo"));
+        gestionVehiculos.agregarVehiculo(new Vehiculo("Chevrolet", "Spark", "2016", 20000, "Excelente", "Gasolina",1200,"Azul"));
+        gestionVehiculos.agregarVehiculo(new Vehiculo("Ford", "Focus", "2018", 30000, "Excelente", "Diesel",900,"Rojo"));
 
         // Buscar vehículos por año
         ArrayList<Vehiculo> vehiculos2015 = gestionVehiculos.buscarVehiculoPorAno("2015", "2020");
