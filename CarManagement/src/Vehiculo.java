@@ -17,19 +17,20 @@ public class Vehiculo {
     String tipoGasolina;
     //color of the vehicle
     String color;
+    int potencia;
 
     /*
      * Constructor method of the Vehicle class.
      */
-    public Vehiculo(String marca, String modelo, String ano, int kilometraje, String estadoActual, String tipoGasolina, String color) {
+    public Vehiculo(String marca, String modelo, String ano, int kilometraje, String estadoActual, String tipoGasolina, int potencia, String color) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.kilometraje = kilometraje;
         this.estadoActual = estadoActual;
-        this.tipoGasolina = tipoGasolina;
         this.color = color;
-
+        setTipoCombustible(tipoGasolina);
+        this.potencia = potencia;
     }
 
     /*
@@ -132,5 +133,12 @@ public class Vehiculo {
             System.out.println("Tipo de combustible no válido.");
         }
 
+    }
+    public int getPotencia() {
+        return potencia;
+    }
+
+    public void setPotencia(int potencia) {
+        this.potencia = potencia;
     }
 }
