@@ -128,7 +128,7 @@ public class Vehiculo {
 
     public void setTipoCombustible(String tipoCombustible) {
         if (tipoCombustible.equals("Gasolina") || tipoCombustible.equals("Diesel") || tipoCombustible.equals("Eléctrico")) {
-            this.fuelType = tipoCombustible;
+            this.tipoGasolina = tipoCombustible;
         } else {
             System.out.println("Tipo de combustible no válido.");
         }
