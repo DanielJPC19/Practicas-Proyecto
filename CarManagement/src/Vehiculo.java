@@ -29,6 +29,7 @@ public class Vehiculo {
         this.estadoActual = estadoActual;
         this.tipoGasolina = tipoGasolina;
         this.color = color;
+
     }
 
     /*
@@ -119,7 +120,17 @@ public class Vehiculo {
         this.tipoGasolina = fuelType;
     }
 
+
     public void setColor(String color){
         this.color = color;
+    }
+
+    public void setTipoCombustible(String tipoCombustible) {
+        if (tipoCombustible.equals("Gasolina") || tipoCombustible.equals("Diesel") || tipoCombustible.equals("Eléctrico")) {
+            this.fuelType = tipoCombustible;
+        } else {
+            System.out.println("Tipo de combustible no válido.");
+        }
+
     }
 }
