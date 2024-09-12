@@ -48,3 +48,23 @@ Utiliza el método imprimirVehiculos() para listar todos los vehículos actualme
 Clona el repositorio en tu máquina local.
 Compila el proyecto en tu entorno de desarrollo.
 Corre la clase Main y utiliza las funcionalidades descritas para gestionar la lista de vehículos.
+
+## Tareas por Usuario
+
+Cada usuario ha trabajado en diferentes partes del sistema, desarrollando funcionalidades específicas:
+
+**Usuario A:** Creación de la clase Vehiculo y su gestión de atributos como marca, modelo, año, y tipo de combustible. También agregó un filtro para buscar vehículos por rango de años.
+
+**Usuario B:** Implementación de la clase HistorialMantenimiento, que almacena el historial de reparaciones de cada vehículo. Añadió la funcionalidad para filtrar vehículos según si su año es mayor o menor al especificado.
+
+**Usuario C:** Desarrollo de la clase Main, que permite agregar y buscar vehículos. También modificó la clase Vehiculo para añadir el atributo "color".
+
+**Usuario D:** Implementación de validaciones adicionales para el tipo de combustible, y añadió el atributo "potencia" en la clase Vehiculo.
+
+**Usuario E:** Mejoró el método de impresión de datos para incluir los nuevos atributos, como color y potencia.
+
+**Usuario F:** Se encargó de la gestión del GitHub, merge entre ramas. Busco que se siguieran estándares de uso en Gitflow.
+
+## Anotación Importante
+
+El sistema está diseñado para ser modular y escalable, permitiendo la adición de nuevas funcionalidades en futuras fases del desarrollo.
