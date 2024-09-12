@@ -30,8 +30,14 @@ public class Main {
     }
 
     public void imprimirVehiculos() {
+        System.out.println("Lista de vehículos:");
+        System.out.println();
+        int count = 1;
         for (Vehiculo vehiculo : vehiculos) {
+            System.out.println("Vehiculo "+count+":");
             System.out.println(vehiculo);
+            count++;
+            System.out.println();
         }
     }
 
@@ -57,6 +63,9 @@ public class Main {
         for (Vehiculo v : vehiculosMenores2015) {
             System.out.println(v.getMarca() + " " + v.getModelo());
         }
+
+        System.out.println();
+        gestionVehiculos.imprimirVehiculos();
 
     }
 }
